@@ -22,7 +22,7 @@ const Home = () => {
         <>
             <div className="container">
 
-       <Link to="/"><button type="button" class="btn btn-light"> <spam className="plusicon"> + </spam> <spam className="plustext"> SELL</spam></button></Link>
+       <Link to="/"><button type="button" class="btn btn-light"> <spam className="plusicon"> + </spam> <spam className="plustext">SELL</spam></button></Link>
    
 
                 <div className="row">

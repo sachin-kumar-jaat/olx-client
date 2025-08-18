@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {useNavigate} from "react-router-dom"
 import axios from "axios"
 
 
@@ -26,6 +27,7 @@ const Main = () => {
         location1: "List",
         State: ""
     })
+    const navigate = useNavigate()
 
     const [files, setFiles] = useState({});
 
@@ -87,6 +89,8 @@ const Main = () => {
         location1: "List",
         State: ""
         })
+
+        navigate("/home")
         } catch (error) {
             console.log(error)
         }
