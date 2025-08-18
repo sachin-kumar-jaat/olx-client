@@ -22,17 +22,17 @@ const Home = () => {
         <>
             <div className="container">
 
-       <Link to="/"><button type="button" class="btn btn-light"> <spam className="plusicon"> + </spam> <spam className="plustext">SELL</spam></button></Link>
+       <Link to="/"><button type="button" class="btn btn-light"> <spam className="plusicon"> + </spam> <spam className="plustext"> SELL</spam></button></Link>
    
 
-                <div className="row mt-3">
+                <div className="row">
      
    
          {
                             users.map((user) => {
                                 return (
                                     <div className="col-12 col-md-3 dicnun" >
-                                        <Link className="underline" to={{ pathname: "/hometwo", search: `id=${user._id}` }} >
+                                        <Link to={{ pathname: "/hometwo", search: `id=${user._id}` }} >
                                             <div class="card mb-3" key={user._id}>
                                                 {
                                                     user.files.map((file) => {
