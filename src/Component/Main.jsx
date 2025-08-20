@@ -51,6 +51,7 @@ const Main = () => {
         e.preventDefault();
 
         try {
+            if(Object.keys(userdata).some(key => !userdata[key])) return;
             const formData = new FormData();
 
             Object.entries(files).forEach(([index, file]) => {
@@ -59,7 +60,7 @@ const Main = () => {
             });
 
             formData.append('form', JSON.stringify(userdata))
-
+              
             await axios.post("https://olx-server-1.onrender.com/api/auth/olxserver", formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
