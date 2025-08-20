@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {useNavigate} from "react-router-dom"
+import { Link } from 'react-router-dom'
 import axios from "axios"
 
 
@@ -24,7 +25,7 @@ const Main = () => {
         adtitle: "",
         Description: "",
         Price: "",
-        location1: "List",
+        location1: "",
         State: ""
     })
     const navigate = useNavigate()
@@ -102,8 +103,15 @@ const Main = () => {
     return (
         <>
             <div className="container-fluid mt-2">
-                <div className="section ">
+                <div className="div.row">
+<div className="col-12 col-md-6">
+    <div className="section ">
                     <h1 className='headingfirst'>Post your Ad</h1>
+                </div>
+</div>
+<div className="col-12 col-md-6">
+     <Link to="/home"><button type="button" class="btn btn-light"> <spam className="plusicon"> + </spam> <spam className="plustext">SELL</spam></button></Link>
+</div>
                 </div>
             </div>
             < div className="container mt-3">
