@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { useSearchParams } from 'react-router-dom';
 import axios from 'axios'
 import Footercard from './Footercard';
@@ -18,6 +19,9 @@ const Hometwo = () => {
 
     return (
         <>
+        <div className="container">
+ <Link to="/"><button type="button" class="btn btn-light"> <spam className="plusicon"> + </spam> <spam className="plustext">SELL</spam></button></Link>
+        </div>
             <div className="bggsection pb-5">
                 <div className="container">
                     <div className="row pt-5 ">
