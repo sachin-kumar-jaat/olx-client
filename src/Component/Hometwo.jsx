@@ -10,7 +10,7 @@ const Hometwo = () => {
     useEffect(() => {
         const id = searchParams.get("id");
         const fetch = async () => {
-            const olxai = await axios.get(`http://localhost:5000/api/auth/olxid/${id}`)
+            const olxai = await axios.get(`https://olx-server-1.onrender.com/api/auth/olxid/${id}`)
             setListing(olxai.data)
         }
         fetch()
