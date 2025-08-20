@@ -20,7 +20,7 @@ const Hometwo = () => {
     return (
         <>
         <div className="container">
- <Link to="/"><button type="button" class="btn btn-light"> <spam className="plusicon"> + </spam> <spam className="plustext">SELL</spam></button></Link>
+ <Link to="/home"><button type="button" class="btn btn-light">  <spam className="plustext">B A C K</spam></button></Link>
         </div>
             <div className="bggsection pb-5">
                 <div className="container">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { Link } from 'react-router-dom'
 import axios from "axios"
 
@@ -52,7 +52,7 @@ const Main = () => {
         e.preventDefault();
 
         try {
-            if(Object.keys(userdata).some(key => !userdata[key])) return;
+            if (Object.keys(userdata).some(key => !userdata[key])) return;
             const formData = new FormData();
 
             Object.entries(files).forEach(([index, file]) => {
@@ -61,7 +61,7 @@ const Main = () => {
             });
 
             formData.append('form', JSON.stringify(userdata))
-              
+
             await axios.post("https://olx-server-1.onrender.com/api/auth/olxserver", formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
@@ -70,29 +70,29 @@ const Main = () => {
                 .then((response) => {
                     console.log(response)
                 })
-                 setuserdata({
-          typename: "",
-        bhkname: "",
-        bathroomname: "",
-        Furnishing: "",
-        projectstatus: "",
-        Listedname: "",
-        sqftname: "",
-        Carpetname: "",
-        Maintenance: "",
-        tfloors: "",
-        nfloors: "",
-        Carparking: "",
-        Facing: "",
-        Project: "",
-        adtitle: "",
-        Description: "",
-        Price: "",
-        location1: "List",
-        State: ""
-        })
+            setuserdata({
+                typename: "",
+                bhkname: "",
+                bathroomname: "",
+                Furnishing: "",
+                projectstatus: "",
+                Listedname: "",
+                sqftname: "",
+                Carpetname: "",
+                Maintenance: "",
+                tfloors: "",
+                nfloors: "",
+                Carparking: "",
+                Facing: "",
+                Project: "",
+                adtitle: "",
+                Description: "",
+                Price: "",
+                location1: "List",
+                State: ""
+            })
 
-        navigate("/home")
+            navigate("/home")
         } catch (error) {
             console.log(error)
         }
@@ -104,14 +104,14 @@ const Main = () => {
         <>
             <div className="container-fluid mt-2">
                 <div className="div.row">
-<div className="col-12 col-md-6">
-    <div className="section ">
-                    <h1 className='headingfirst'>Post your Ad</h1>
-                </div>
-</div>
-<div className="col-12 col-md-6">
-     <Link to="/home"><button type="button" class="btn btn-light"> <spam className="plusicon"> + </spam> <spam className="plustext">SELL</spam></button></Link>
-</div>
+                    <div className="col-12 col-md-6">
+                        <div className="section ">
+                            <h1 className='headingfirst'>Post your Ad</h1>
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6">
+                        <Link to="/home"><button type="button" class="btn btn-light">  <spam className="plustext">H O M E </spam></button></Link>
+                    </div>
                 </div>
             </div>
             < div className="container mt-3">
@@ -495,7 +495,7 @@ const Main = () => {
                                         <option value="Uttar Pradesh">Uttar Pradesh</option>
                                         <option value="Uttaranchal">Uttaranchal</option>
                                         <option value="West Bengal">West Bengal</option>
-                                        </select><div class="rui-Q6xN5"><div class="rui-UgU64"></div><div class="rui-1bxrI"></div></div></div>
+                                    </select><div class="rui-Q6xN5"><div class="rui-UgU64"></div><div class="rui-1bxrI"></div></div></div>
 
                                 </div>
 
@@ -506,13 +506,13 @@ const Main = () => {
 
                         <div className="row mt-2">
                             <div className="col-md-6 mb-2">
-                                
-                                            <div className="container">
-                                                <button type='submit' className='btn btn-success'>Post now </button>
 
-                                         </div>
-                                         </div>
-                                     </div>
+                                <div className="container">
+                                    <button type='submit' className='btn btn-success'>Post now </button>
+
+                                </div>
+                            </div>
+                        </div>
 
 
 
