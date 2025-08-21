@@ -77,7 +77,7 @@ const Hometwo = () => {
                                             <p>{listing.Facing}</p>
                                             <p>{listing.Carparking}</p>
                                             <p>{listing.tfloors}</p>
-                                            <p>{listing.projectstatus}</p>
+                                            <p>{listing.Project}</p>
 
 
                                         </div>
