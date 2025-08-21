@@ -93,8 +93,8 @@ color: rgb(96, 96, 221);
 Link{
     text-decoration: none;
 }
-.underline Link{
-    text-decoration: none 
+Link{
+    text-decoration: none !important
 }
 .dicnun{
 width: 100%;
