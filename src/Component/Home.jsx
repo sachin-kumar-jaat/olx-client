@@ -32,8 +32,8 @@ const Home = () => {
                             users.map((user) => {
                                 return (
                                     <div className="col-12 col-md-3 " >
-                                        <Link  to={{ pathname: "/hometwo", search: `id=${user._id}` }} >
-                                            <div class="card mb-3 underline" key={user._id}>
+                                        <Link className='underline' to={{ pathname: "/hometwo", search: `id=${user._id}` }} >
+                                            <div class="card mb-3 " key={user._id}>
                                                 {
                                                     user.files.map((file) => {
                                                         return (
@@ -42,9 +42,9 @@ const Home = () => {
                                                     })
                                                 }
                                                 <div class="card-body">
-                                                    <h2 class="card-title underline">₹ {user.Price}</h2>
-                                                    <p class="card-title underline"> {user.bhkname} BHK {user.bathroomname} Bathrooms {user.sqftname} Sqft</p>
-                                                    <p class="card-title underline">{user.State}</p>
+                                                    <h2 class="card-title ">₹ {user.Price}</h2>
+                                                    <p class="card-title "> {user.bhkname} BHK {user.bathroomname} Bathrooms {user.sqftname} Sqft</p>
+                                                    <p class="card-title ">{user.State}</p>
 
                                                 </div>
                                             </div>
