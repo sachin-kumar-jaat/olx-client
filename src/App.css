@@ -93,7 +93,7 @@ color: rgb(96, 96, 221);
 Link{
     text-decoration: none;
 }
-.underline{
+.underline Link{
     text-decoration: none !important
 }
 .dicnun{
