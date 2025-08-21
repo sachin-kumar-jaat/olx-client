@@ -93,7 +93,7 @@ const Hometwo = () => {
                             </div>
                         </div>
                         <div className="col-12 col-md-4">
-                            <div className="card p-3">
+                            <div className="card p-3 m-3">
                                 <h5>₹{listing.Price}</h5>
                                 <h5>{listing.bhkname} BHK - {listing.bathroomname}Bathroom - {listing.sqftname} sqft</h5>
                                 <br />
