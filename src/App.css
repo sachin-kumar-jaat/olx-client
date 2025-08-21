@@ -90,10 +90,8 @@ color: rgb(96, 96, 221);
     height: 20%;
 }
 
-Link{
-    text-decoration: none;
-}
-Link{
+
+.underline Link{
     text-decoration: none !important
 }
 .dicnun{
