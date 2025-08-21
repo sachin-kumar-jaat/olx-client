@@ -69,15 +69,15 @@ const Hometwo = () => {
                                             <p>Facing</p>
                                             <p>Car Parking</p>
                                             <p>Total Floors</p>
-                                           
+                                            <p>Project Name</p>
                                         </div>
                                         <div className="col-6 col-md-3">
                                             <p>{listing.bathroomname}</p>
-                                            <p>{listing.projectstatu}</p>
+                                            <p>{listing.projectstatus}</p>
                                             <p>{listing.Facing}</p>
                                             <p>{listing.Carparking}</p>
                                             <p>{listing.tfloors}</p>
-                                            
+                                            <p>{listing.Project}</p>
 
 
                                         </div>
