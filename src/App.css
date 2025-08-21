@@ -91,7 +91,7 @@ color: rgb(96, 96, 221);
 }
 
 
-.underline{
+.underline h2,p{
     text-decoration: none !important;
 }
 .dicnun{
