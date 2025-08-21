@@ -32,7 +32,7 @@ const Home = () => {
                             users.map((user) => {
                                 return (
                                     <div className="col-12 col-md-3 dicnun" >
-                                        <Link to={{ pathname: "/hometwo", search: `id=${user._id}` }} >
+                                        <Link className='Link' to={{ pathname: "/hometwo", search: `id=${user._id}` }} >
                                             <div class="card mb-3" key={user._id}>
                                                 {
                                                     user.files.map((file) => {
@@ -41,7 +41,7 @@ const Home = () => {
                                                         )
                                                     })
                                                 }
-                                                <div class="card-body Link">
+                                                <div class="card-body">
                                                     <h2 class="card-title">₹ {user.Price}</h2>
                                                     <p class="card-title"> {user.bhkname} BHK {user.bathroomname} Bathrooms {user.sqftname} Sqft</p>
                                                     <p class="card-title">{user.State}</p>
