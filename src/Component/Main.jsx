@@ -109,9 +109,7 @@ const Main = () => {
                             <h1 className='headingfirst'>Post your Ad</h1>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6">
-                        <Link to="/home"><button type="button" class="btn btn-light">  <spam className="plustext">H O M E </spam></button></Link>
-                    </div>
+                   
                 </div>
             </div>
             < div className="container mt-3">
